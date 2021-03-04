@@ -152,3 +152,15 @@ Now, you can change the theme, in your config(.yml) file to your new theme.
         values:
         image: true
         # scope and values should be at the same tab level
+  
+  Hosting on Github pages: 
+  First, go to your config file and edit the baseurl: (url name)
+  Make a repository
+  cd to (site directory)
+  run $ git init
+  to work in the gh-pages branch $ git checkout -b gh-pages
+  to see file status - $ git status
+  $ git add . 
+  $ git commit -m "initial commit" 
+  $ git remote add origin (link to github repository)
+  push commited files to github repository $ git push origin gh-pages
