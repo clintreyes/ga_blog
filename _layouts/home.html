@@ -1,0 +1,19 @@
+{% for post in site.posts %} 
+    <li><a href="{{ post.url }}">{{post.title}}</a></li>
+{% endfor %}
+
+<br> 
+
+<h2>Just printing out some data ... </h2>
+{% for person in site.data.people %}
+    {{ person.name }}, {{ person.occupation }} <br>
+{% endfor %}
+
+<h2> Static files </h2>
+{% for file in site.static_files %}
+    {% if file.image %}
+        <img src="{{file.path}}" alt="{file.name}">
+    {% endif %}
+    <!-- {{ file.name }} <br> -->
+    <!-- we can access other parameters of the file like file.name file.basename file.extname -->
+{% endfor %}

@@ -1,0 +1,16 @@
+---
+layout: "wrapper"
+<!-- author: "Clint" -->
+---
+
+{% for post in site.posts %}
+    <li><a style="{% if page.url == post.url %}color:red;{% endif %}" href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+
+<h2>{{ page.title }}</h2>
+<!-- Variables (layout.author): note this will only work for variables inside the layout  
+    page.author uses the author defined on the page -->
+
+<hr>
+
+{{ content }}
