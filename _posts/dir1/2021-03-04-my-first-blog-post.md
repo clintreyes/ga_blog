@@ -164,3 +164,8 @@ Now, you can change the theme, in your config(.yml) file to your new theme.
   $ git commit -m "initial commit" 
   $ git remote add origin (link to github repository)
   push commited files to github repository $ git push origin gh-pages
+
+  Revisions: 
+  git add .
+  git commit -m 
+  git push origin gh-pages
